@@ -2,13 +2,21 @@
     height: 100vh;
     width: full;
     width: 100%;
+    background-color: #fafafa;
+}
+
+.registration-form{
+    background-color: #ffffff;
+    border-color: #e1e7ed;
 }
 
 /* Left sidebar */
 
 .left-sidebar {
     width: 25%;
-    background-color: #e1e7ed;
+    background-color: #fafafa;
+    border-right:#f7f7f7 ;
+    border-style: solid;
     color: #000000;
 }
 
@@ -37,10 +45,22 @@
 }
 
 #name{
-    width: 15rem;
+    width: 16rem;
     right: 0;
 }
 
+#name-title {
+    border-style: solid;
+    border-color: black;
+}
+
+.name-title {
+    margin-right: 1rem;
+    background: #f9f2f2;
+    width: 125px;
+    height: 2.5rem;
+    border-radius: 5px;
+}
 .left-side-box {
     width: 38%;
 
@@ -52,7 +72,7 @@
 
 .Password-container {
     position: relative;
-    width: 525px;
+    width: 25rem;
     margin-bottom: 15px;
 }
 
@@ -64,4 +84,19 @@
     cursor: pointer;
 }
 
+#company-input {
+    width: 12rem;
+}
+
+#mobileNumber {
+    width: 16rem;
+}
+
+#country {
+    margin-right: 1rem;
+    background: #f9f2f2;
+    width: 125px;
+    height: 2.5rem;
+    border-radius: 5px;
+}
 

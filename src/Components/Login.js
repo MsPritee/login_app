@@ -4,6 +4,7 @@ import Person from "./Images/UN.png"
 import Eye from "./Images/eye1.png"
 import Key from "./Images/key.png"
 import './Login.css'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
     return (
@@ -47,7 +48,9 @@ const Login = () => {
 
                         </form>
                     </div>
-                    <p className=' mt-3 font-bold'>Don't Have Verified Hiring Accout ? Register Now</p>
+                    <p className=' mt-3 font-bold'>Don't Have Verified Hiring Accout ?
+                        <Link to="/registration">Register Now</Link> 
+                    </p>
                     <button className='cancel-btn font-bold my-5 cursor-pointer' type='submit' >Cancel</button>
                 </div>
             </div>
