@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/login_app/static/css/main.4d526b86.css",
+    "main.js": "/login_app/static/js/main.bb049324.js",
+    "static/media/1.webp": "/login_app/static/media/1.bc92dafe3518ea2fcbf2.webp",
+    "index.html": "/login_app/index.html",
+    "main.4d526b86.css.map": "/login_app/static/css/main.4d526b86.css.map",
+    "main.bb049324.js.map": "/login_app/static/js/main.bb049324.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4d526b86.css",
+    "static/js/main.bb049324.js"
+  ]
+}
