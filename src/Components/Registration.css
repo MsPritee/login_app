@@ -1,0 +1,67 @@
+.registration-container {
+    height: 100vh;
+    width: full;
+    width: 100%;
+}
+
+/* Left sidebar */
+
+.left-sidebar {
+    width: 25%;
+    background-color: #e1e7ed;
+    color: #000000;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Right side form, */
+
+.form-box {
+    width: 75%;
+    height: fit-content;
+}
+
+.form-box input {
+    width: 25rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+#name{
+    width: 15rem;
+    right: 0;
+}
+
+.left-side-box {
+    width: 38%;
+
+}
+
+.right-side-box {
+    width: 35%;
+}
+
+.Password-container {
+    position: relative;
+    width: 525px;
+    margin-bottom: 15px;
+}
+
+.eye {
+    right: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
