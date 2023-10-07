@@ -8,6 +8,7 @@
 .registration-form{
     background-color: #ffffff;
     border-color: #e1e7ed;
+    padding: 1rem;
 }
 
 /* Left sidebar */
@@ -61,6 +62,7 @@
     height: 2.5rem;
     border-radius: 5px;
 }
+
 .left-side-box {
     width: 38%;
 
@@ -72,14 +74,13 @@
 
 .Password-container {
     position: relative;
-    width: 25rem;
-    margin-bottom: 15px;
+text-align: center;
 }
 
 .eye {
-    right: 10px;
+    right: 1rem;
     position: absolute;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -100,3 +101,43 @@
     border-radius: 5px;
 }
 
+@media (max-width: 639px) {
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-side-box,
+    .right-side-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-side-box {
+        margin-top: 1rem;
+    }
+
+    .registration-form input {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+
+    #name,
+    #mobileNumber,
+    #company-input,
+    .name-title,
+    #country {
+        width: 100%;
+        right: 0;
+    }
+
+    #name-title {
+        border-style: solid;
+        border-color: black;
+    }
+
+
+
+}

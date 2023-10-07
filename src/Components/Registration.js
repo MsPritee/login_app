@@ -5,7 +5,7 @@ import Eye from "./Images/eye1.png"
 export const Registration = () => {
     return (
         <>
-            <div className=' registration-container flex h-full '>
+            <div className=' registration-container flex h-full min-h-screen'>
                 <div className='left-sidebar form-menu'>
                     <h3 className='text-2xl font-bold mt-12 mb-8 ml-7'>
                         Build Your Profile
@@ -27,15 +27,15 @@ export const Registration = () => {
                     </h2>
                     <div className='registration-form flex gap-10 mt-5 mx-9 rounded '>
                         <div className='left-side-box  flex flex-col m-6 ml-9'>
-                            <div className='name-box flex my-5'>
+                            <div className='name-box flex gap-1 my-5'>
                                 <div className='name_title'>
-                                    <label htmlFor="country">Country</label>
-                                    <div id='name-title' className='name-title  ' >
-                                        <select className='name-title pl-3' id="country" name="country" >
-                                            <option value="usa">Select</option>
-                                            <option value="usa">Mrs.</option>
-                                            <option value="canada">Miss.</option>
-                                            <option value="canada">Ms.</option>
+                                    <label htmlFor="country">Title</label>
+                                    <div id='name-title' className='name-title pr-1  ' >
+                                        <select className='name-title pl-2  ' id="title" name="title" >
+                                            <option value="">Select</option>
+                                            <option value="Mrs.">Mrs.</option>
+                                            <option value="Miss">Miss.</option>
+                                            <option value="Ms">Ms.</option>
                                         </select>
                                     </div>
                                 </div>
