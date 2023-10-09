@@ -25,13 +25,14 @@ export const Registration = () => {
                     <h2 className='font-bold text-2xl '>
                         Recruiter Registration
                     </h2>
+
                     <div className='registration-form flex gap-10 mt-5 mx-9 rounded '>
-                        <div className='left-side-box  flex flex-col m-6 ml-9'>
-                            <div className='name-box flex gap-1 my-5'>
-                                <div className='name_title'>
+                        <div className='left-side-box relative  flex flex-col m-6 ml-9'>
+                            <div className='name-box justify-between flex gap-1 my-5'>
+                                <div className='name_title  '>
                                     <label htmlFor="country">Title</label>
                                     <div id='name-title' className='name-title pr-1  ' >
-                                        <select className='name-title pl-2  ' id="title" name="title" >
+                                        <select className='name-title pl-2   border-solid border-gray-100 rounded mr-1 w-32 border-2 h-10' id="title" name="title" >
                                             <option value="">Select</option>
                                             <option value="Mrs.">Mrs.</option>
                                             <option value="Miss">Miss.</option>
@@ -39,9 +40,9 @@ export const Registration = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className='name-box '>
+                                <div className='name-box flex flex-col flex-auto'>
                                     <label >Name</label>
-                                    <input id="name" className='name-input ' type='text' placeholder='Name' />
+                                    <input id="name" className='name-input w-full ' type='text' placeholder='Name' />
                                 </div>
                             </div>
                             <div className='company-email mb-5'>
@@ -50,10 +51,10 @@ export const Registration = () => {
                             </div>
                             <div className='password'>
                                 <label className='mb-2'> Password </label>
-                                <div className='Password-container '>
+                                <div className='Password-container relative w-full  '>
                                     <input className='password-input' type='password' placeholder='Password' />
-                                    <span className="eye h-5 w-5 mr-3" >
-                                        <img src={Eye} alt="Toggle Password" />
+                                    <span className="eye h-5 w-5 right-0 absolute cursor-pointer" >
+                                        <img className='right-0' src={Eye} alt="Toggle Password" />
                                     </span>
                                 </div>
                             </div>
@@ -64,39 +65,41 @@ export const Registration = () => {
                             </div>
 
                         </div>
-                        <div className='right-side-box flex flex-col m-6'>
-                            <div className='company-detail flex gap-4 my-5'>
-                                <div className='company-name'>
+                        <div className='right-side-box flex flex-col m-6 mr-9'>
+                            <div className='company-detail justify-between flex gap-4 my-5'>
+                                <div className='company-name flex-1  flex flex-col' >
                                     <label >Company Name</label>
-                                    <input id='company-input' className='company-name w-8' type='text' placeholder='Enter Company Name' />
+                                    <input id='company-input' className='  company-name' type='text' placeholder='Enter Company Name' />
                                 </div>
-                                <div className='designation'>
+                                <div className='designation flex-2 flex-col'>
                                     <label >Designation</label>
-                                    <input id='company-input' className='w-8' type='text' placeholder='Enter Designation' />
+                                    <input id='company-input' className='' type='text' placeholder='Enter Designation' />
                                 </div>
                             </div>
                             <div className='personal-email'>
                                 <label >Personal Email ID</label>
                                 <input className='' type='text' placeholder='Enter Personal Email ID' />
                             </div>
-                            <div className='personal-detail flex gap-4 my-5'>
-                                <div id="select-country">
-                                    <label htmlFor="country">Country:</label>
-                                    <select id="country" name="country pl-6">
+                            <div className='personal-detail flex gap-1 my-5 w-full'>
+                                <div className='county-select'>
+                                    <label htmlFor="country">Country</label>
+                                    <div id="select-country" className='name-title pr-1'>
+                                        <select id="country" name="country pl-2">
                                         <option value="">Select</option>
                                         <option value="usa">USA</option>
                                         <option value="canada">India</option>
                                         <option value="canada">Canada</option>
                                     </select>
                                 </div>
-                                <div id="mobile">
+                                </div>
+                                <div id="mobile" className='flex flex-col flex-auto'>
                                     <label htmlFor="mobileNumber">Mobile Number</label>
-                                    <input type="tel" id="mobileNumber" className='' name="mobileNumber" />
+                                    <input type="tel" id="mobileNumber" className='w-full' name="mobileNumber" />
                                 </div>
                             </div>
 
-                            <div className='continue-btn  w-full right-0 '>
-                                <button className=' bg-blue-800 text-white mt-3  py-2.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
+                            <div className='continue-btn  w-full  '>
+                                <button className=' bg-blue-800 text-white mt-3 py-2.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
                                     Continue
                                 </button>
                             </div>

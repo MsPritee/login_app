@@ -37,6 +37,14 @@
     height: fit-content;
 }
 
+.left-side-box {
+    width: 38%;
+
+}
+
+.right-side-box {
+    width: 35%;
+}
 .form-box input {
     width: 25rem;
     padding: 10px;
@@ -55,36 +63,6 @@
     border-color: black;
 }
 
-.name-title {
-    margin-right: 1rem;
-    background: #f9f2f2;
-    width: 125px;
-    height: 2.5rem;
-    border-radius: 5px;
-}
-
-.left-side-box {
-    width: 38%;
-
-}
-
-.right-side-box {
-    width: 35%;
-}
-
-.Password-container {
-    position: relative;
-text-align: center;
-}
-
-.eye {
-    right: 1rem;
-    position: absolute;
-    top: 40%;
-    transform: translateY(-50%);
-    cursor: pointer;
-}
-
 #company-input {
     width: 12rem;
 }
@@ -96,15 +74,21 @@ text-align: center;
 #country {
     margin-right: 1rem;
     background: #f9f2f2;
-    width: 125px;
+    width: 6rem;
     height: 2.5rem;
     border-radius: 5px;
 }
 
-@media (max-width: 639px) {
+@media (max-width: 1250px) {
+    .form-box {
+        width: 100%;
+        margin-right: 6rem;
+        margin-left: 1rem;
+    }
     .registration-form {
         display: flex;
         flex-direction: column;
+            right: 4rem;
     }
 
     .left-side-box,
@@ -117,27 +101,42 @@ text-align: center;
         margin-top: 1rem;
     }
 
-    .registration-form input {
+        .registration-form input,
+        .registration-form select {
         width: 100%;
         padding: 8px;
         border-radius: 3px;
         margin-bottom: 10px;
     }
-
-    #name,
-    #mobileNumber,
-    #company-input,
-    .name-title,
-    #country {
+     #name {
         width: 100%;
-        right: 0;
     }
 
-    #name-title {
-        border-style: solid;
-        border-color: black;
+    #company-input,
+    #mobileNumber {
+        width: 100%;
+    }
+    #name-title{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+    #select-country, #country{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+}
+
+@media(max-width: 750px) {
+    .left-sidebar {
+        display: none;
+    }
+    .form-box {
+        margin-right: 1rem;
+        margin-left: 1rem;
     }
 
-
-
+    .registration-form {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
