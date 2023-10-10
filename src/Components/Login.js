@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./Images/1.webp"
+import logo from "./Images/logo.png";
 import Person from "./Images/UN.png"
 import Eye from "./Images/eye1.png"
 import Key from "./Images/key.png"
