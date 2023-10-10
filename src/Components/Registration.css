@@ -1,0 +1,137 @@
+
+.registration-container {
+    height: 100vh;
+    width: full;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.registration-form{
+    background-color: #ffffff;
+    border-color: #e1e7ed;
+    padding: 1rem;
+}
+
+/* Left sidebar */
+
+.left-sidebar {
+    width: 25%;
+    background-color: #fafafa;
+    border-right:#f7f7f7 ;
+    border-style: solid;
+    color: #000000;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Right side form, */
+
+.form-box {
+    width: 75%;
+    height: fit-content;
+}
+
+
+.form-box input{
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 2.5rem;
+}
+
+.Pass-container{
+    width: 100%;
+}
+
+
+#name-title {
+    border-style: solid;
+    border-color: black;
+}
+
+#country {
+    margin-right: 1rem;
+    background: #f9f2f2;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 1250px) {
+    .form-box {
+        width: 100%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+        .left-sidebar {
+            width: 35%;
+           
+        }
+
+    .registration-form {
+        display: flex;
+        flex-direction: column;
+            right: 4rem;
+    }
+
+    .left-side-box,
+    .right-side-box {
+        width: 100%;
+        margin: 0;
+    }
+
+    .right-side-box {
+        margin-top: 1rem;
+    }
+
+        .registration-form input,
+        .registration-form select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+     #name {
+        width: 100%;
+    }
+
+    #company-input,
+    #mobileNumber {
+        width: 100%;
+    }
+    #name-title{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+    #select-country, #country{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+        .Pass-container {
+            width: 100%;
+        }
+}
+
+@media(max-width: 750px) {
+    .left-sidebar {
+        display: none;
+    }
+    .form-box {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .registration-form {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
