@@ -1,7 +1,6 @@
 import React from 'react'
 import './Registration.css'
 import Eye from "./Images/eye1.png"
-
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -14,7 +13,7 @@ export const Registration = () => {
                         Build Your Profile
                     </h3>
                     <div className='bg-white rounded py-7'>
-                        <div className="menu ml-11 text-base md:text-sm  lg:text-lg ">
+                        <div className="menu ml-8 text-base md:text-sm  lg:text-lg ">
                         <ul>
                                 <li className='list-item'>
                                     <FontAwesomeIcon className='pr-2' icon={faArrowRight} />Recruiter Registration
@@ -24,7 +23,7 @@ export const Registration = () => {
                                 </li>
                         </ul>
                     </div>
-                    <p className='ml-6'> Note: Please fill your details carefully</p>
+                        <p className='ml-4   '> Note: Please fill your details carefully</p>
                     </div>
                 </div>
 
@@ -33,9 +32,9 @@ export const Registration = () => {
                         Recruiter Registration
                     </h2>
 
-                    <div className='registration-form flex gap-10 mt-5 mx-9 rounded '>
-                        <div className='left-side-box relative  flex flex-col m-6 ml-9'>
-                            <div className='name-box justify-between flex gap-1 my-5'>
+                    <div className='registration-form font-medium flex gap-2 :gap-6 mt-5 mx-1 rounded '>
+                        <div className='left-side-box  flex flex-auto flex-col m-1'>
+                            <div className='name-box  flex gap-1 my-5'>
                                 <div className='name_title  '>
                                     <label htmlFor="country">Title</label>
                                     <div id='name-title' className='name-title pr-1  ' >
@@ -47,17 +46,17 @@ export const Registration = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className='name-box flex flex-col flex-auto'>
+                                <div className='name-box flex flex-col flex-1 '>
                                     <label >Name</label>
-                                    <input id="name" className='name-input w-full ' type='text' placeholder='Name' />
+                                    <input id="name" className='name-input flex-1 w-full ' type='text' placeholder='Name' />
                                 </div>
                             </div>
-                            <div className='company-email mb-5'>
+                            <div className='company-email mb-5  flex flex-col'>
                                 <label >Company Email ID</label>
                                 <input className='company-input' type='text' placeholder='Company' />
                             </div>                      
 
-                            <div className='password'>
+                            <div className='password  '>
                                 <label className='mb-2'> Password </label>
                                 <div className='Pass-container relative '>
                                     <input className='password-input ' type='password' placeholder='Password' />
@@ -74,18 +73,18 @@ export const Registration = () => {
                             </div>
 
                         </div>
-                        <div className='right-side-box flex flex-col m-6 mr-9'>
+                        <div className='right-side-box flex-auto flex flex-col m-1'>
                             <div className='company-detail justify-between flex gap-4 my-5'>
-                                <div className='company-name flex-1  flex flex-col' >
+                                <div className='company-name flex-auto flex flex-col' >
                                     <label >Company Name</label>
                                     <input id='company-input' className='  company-name' type='text' placeholder='Enter Company Name' />
                                 </div>
-                                <div className='designation flex-2 flex-col'>
+                                <div className='designation flex-auto flex flex-col'>
                                     <label >Designation</label>
                                     <input id='company-input' className='' type='text' placeholder='Enter Designation' />
                                 </div>
                             </div>
-                            <div className='personal-email'>
+                            <div className='personal-email  flex flex-col'>
                                 <label >Personal Email ID</label>
                                 <input className='' type='text' placeholder='Enter Personal Email ID' />
                             </div>

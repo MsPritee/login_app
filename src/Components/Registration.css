@@ -37,15 +37,9 @@
     height: fit-content;
 }
 
-.left-side-box {
-    width: 38%;
-}
 
-.right-side-box {
-    width: 35%;
-}
-.form-box input {
-    width: 25rem;
+.form-box input{
+    width:100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -53,25 +47,13 @@
 }
 
 .Pass-container{
-    width: 25rem;
+    width: 100%;
 }
 
-#name{
-    width: 16rem;
-    right: 0;
-}
 
 #name-title {
     border-style: solid;
     border-color: black;
-}
-
-#company-input {
-    width: 12rem;
-}
-
-#mobileNumber {
-    width: 16rem;
 }
 
 #country {
