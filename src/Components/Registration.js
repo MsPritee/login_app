@@ -2,19 +2,26 @@ import React from 'react'
 import './Registration.css'
 import Eye from "./Images/eye1.png"
 
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export const Registration = () => {
     return (
         <>
             <div className=' registration-container flex h-full min-h-screen'>
                 <div className='left-sidebar form-menu'>
-                    <h3 className='text-2xl font-bold mt-12 mb-8 ml-7'>
+                    <h3 className='text-2xl font-bold mt-12 mb-8 ml-7 md:text-lg lg:text-xl xl:text-2xl'>
                         Build Your Profile
                     </h3>
                     <div className='bg-white rounded py-7'>
-                        <div className="menu ml-11 font-medium">
+                        <div className="menu ml-11 text-base md:text-sm  lg:text-lg ">
                         <ul>
-                            <li>Recruiter Registration</li>
-                            <li>Company Details</li>
+                                <li className='list-item'>
+                                    <FontAwesomeIcon className='pr-2' icon={faArrowRight} />Recruiter Registration
+                                </li>
+                                <li>
+                                    <FontAwesomeIcon className='pr-2' icon={faArrowRight} />Company Details
+                                </li>
                         </ul>
                     </div>
                     <p className='ml-6'> Note: Please fill your details carefully</p>
@@ -48,18 +55,20 @@ export const Registration = () => {
                             <div className='company-email mb-5'>
                                 <label >Company Email ID</label>
                                 <input className='company-input' type='text' placeholder='Company' />
-                            </div>
+                            </div>                      
+
                             <div className='password'>
                                 <label className='mb-2'> Password </label>
-                                <div className='Password-container relative w-full  '>
-                                    <input className='password-input' type='password' placeholder='Password' />
-                                    <span className="eye h-5 w-5 right-0 absolute cursor-pointer" >
-                                        <img className='right-0' src={Eye} alt="Toggle Password" />
+                                <div className='Pass-container relative '>
+                                    <input className='password-input ' type='password' placeholder='Password' />
+                                    <span className="eye h-5 w-5 cursor-pointer absolute right-2 top-1/2 transform -translate-y-1/2" >
+                                        <img src={Eye} alt="Toggle Password" />
                                     </span>
                                 </div>
                             </div>
-                            <div className='cancel-btn'>
-                                <button className='bg-gray-100 mt-3  py-2.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
+
+                            <div className='cancel-btn w-full'>
+                                <button className='bg-gray-100 mt-8  py-2.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
                                     Cancel
                                 </button>
                             </div>

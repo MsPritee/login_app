@@ -49,7 +49,7 @@ const Login = () => {
                         </form>
                     </div>
                     <p className=' mt-3 font-bold'>Don't Have Verified Hiring Accout ?
-                        <Link to="/registration">Register Now</Link> 
+                        <Link to="/registration" className='text-blue-800'>Register Now</Link> 
                     </p>
                     <button className='cancel-btn font-bold my-5 cursor-pointer' type='submit' >Cancel</button>
                 </div>

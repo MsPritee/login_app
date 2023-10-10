@@ -39,7 +39,6 @@
 
 .left-side-box {
     width: 38%;
-
 }
 
 .right-side-box {
@@ -51,6 +50,10 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     height: 2.5rem;
+}
+
+.Pass-container{
+    width: 25rem;
 }
 
 #name{
@@ -82,9 +85,15 @@
 @media (max-width: 1250px) {
     .form-box {
         width: 100%;
-        margin-right: 6rem;
+        margin-right: 1rem;
         margin-left: 1rem;
     }
+
+        .left-sidebar {
+            width: 35%;
+           
+        }
+
     .registration-form {
         display: flex;
         flex-direction: column;
@@ -124,6 +133,9 @@
         max-width: 8rem;
         min-width: 4rem;
     }
+        .Pass-container {
+            width: 100%;
+        }
 }
 
 @media(max-width: 750px) {
