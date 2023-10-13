@@ -130,7 +130,7 @@ export const Registration = () => {
                     </div>
                 </div>
 
-                <footer className='footer sm:bottom-0  absolute bottom-0 w-full h-20 bg-zinc-400 '>
+                <footer className='footer sm:bottom-0  absolute bottom-0 w-full h-20 bg-zinc-100 border '>
                     <div className='left-0  flex items-center justify-center md:justify-start md:ml-24  py-6 '>
                         <h4>© Copyright IntegrationWings 2023</h4>
                     </div>
