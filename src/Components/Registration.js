@@ -1,12 +1,25 @@
 
-import React from 'react'
-import './Registration.css'
+import React, { useState } from 'react';
+import './Registration.css';
 import Eye from "./Images/eye1.png"
 import logo from "./Images/logo.png";
+import Hide from './Images/hide.png';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
 
 export const Registration = () => {
+
+    const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
+    
+    const handleTogglePassword = () => {
+        setShowPassword(!showPassword);
+    };
+
+    const cancelBtn = () => {
+        navigate('/')
+    }
     return (
         <>
 
@@ -45,9 +58,9 @@ export const Registration = () => {
                             Recruiter Registration
                         </h2>
                         <div >
-                            <div className='registration-form font-medium flex gap-2 :gap-6  mx-1 rounded '>
+                            <div className='registration-form font-medium flex gap-3  mx-1 rounded '>
                                 <div className='left-side-box  flex flex-auto flex-col m-1'>
-                                    <div className='name-box  flex gap-1 my-5'>
+                                    <div className='name-box  flex gap-2 my-5'>
                                         <div className='name_title  '>
                                             <label htmlFor='saluation'>Saluation</label>
                                             <div id='name-saluation' className='name-title pr-1  ' >
@@ -73,9 +86,15 @@ export const Registration = () => {
                                     <div className='password  '>
                                         <label className='mb-2'> Password </label>
                                         <div className='Pass-container relative '>
-                                            <input className='password-input ' type='password' placeholder='Enter Password' />
-                                            <span className="eye h-5 w-5 cursor-pointer absolute right-2 top-1/2 transform -translate-y-1/2" >
-                                                <img src={Eye} alt="Toggle Password" />
+                                            <input className='password-input ' type={showPassword ? "text" : "password"} placeholder='Enter Password' />
+                                            <span className="eye h-5 w-5 cursor-pointer absolute right-2 top-1/2 transform -translate-y-1/2"
+                                                onClick={handleTogglePassword}>
+                                                {showPassword ? (
+                                                    <img src={Hide} alt="Toggle Password" />
+                                                ) : (
+                                                        <img src = { Eye } alt = "Toggle Password" />
+                                                )}
+                                                
                                             </span>
                                         </div>
                                     </div>
@@ -97,7 +116,7 @@ export const Registration = () => {
                                         <label >Personal Email ID</label>
                                         <input className='i' type='text' placeholder='Enter Personal Email ID' />
                                     </div>
-                                    <div className='personal-detail flex gap-1 my-5 w-full'>
+                                    <div className='personal-detail flex gap-2 my-5 w-full'>
                                         <div className='county-select'>
                                             <label htmlFor="country">Country</label>
                                             <div id="select-country" className='name-title '>
@@ -119,17 +138,12 @@ export const Registration = () => {
                                 </div>
                             </div>
                             <div className='flex flex-row w-full justify-between px-3 pb-2'>
-                                    {/* <div className='cancel-btn w-full'> */}
-                                        <button className='bg-gray-100 border mt-3  py-1.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
+                                <button className='bg-gray-100 border mt-3  py-1.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold ' onClick={cancelBtn}>
                                             Cancel
                                         </button>
-                                    {/* </div> */}
-
-                                    {/* <div className='continue-btn  w-full  '> */}
                                         <button className=' bg-blue-800 right-0 text-white mt-3 py-1.5 px-4 rounded hover:bg-slate-300 hover:text-black hover:font-bold '>
-                                            Continue
+                                    Continue <span class="a-Icon icon-down-arrow" aria-hidden="true" ></span>
                                         </button>
-                                    {/* </div> */}
                                 </div>
 
                            

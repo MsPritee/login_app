@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "./Images/logo.png";
 import Person from "./Images/UN.png"
 import Eye from "./Images/eye1.png"
 import Key from "./Images/key.png"
+import Hide from "./Images/hide.png"
 import './Login.css'
 import { Link } from 'react-router-dom';
 
 const Login = () => {
+
+    const [showPassword, setShowPassword] = useState(false);
+    const handleTogglePassword = (()=>{
+        setShowPassword(!showPassword);
+
+    })
+
     return (
         <>
             <div className='login-container mx-auto  '>
@@ -34,9 +42,14 @@ const Login = () => {
                                     <span className="key h-5 w-5 ">
                                         <img src={Key} />
                                     </span>
-                                    <input className='password-input' type='password' placeholder='Password' />
-                                    <span className="eye h-5 w-5 mr-3" >
-                                        <img src={Eye} alt="Toggle Password" />
+                                    <input className='password-input' type={showPassword ? "text" : "password"} placeholder='Password' />
+                                    <span className="eye h-5 w-5 mr-3" onClick={handleTogglePassword}>
+                                        {showPassword ? (
+                                            <img src={Hide} alt="Hide Password" />
+                                        ): (
+                                                <img src={Eye} alt="Show Password" />
+                                        )}                                       
+
                                     </span>
                                 </div>
                             </div>
@@ -49,7 +62,7 @@ const Login = () => {
                         </form>
                     </div>
                     <p className=' mt-3 font-bold'>Don't Have Verified Hiring Accout ?
-                        <Link to="/registration" className='text-blue-800'>Register Now</Link> 
+                        <Link to="/registration" className='hover:text-lime-600 hover:underline text-blue-800'> Register Now</Link> 
                     </p>
                     <button className='cancel-btn font-bold my-5 cursor-pointer' type='submit' >Cancel</button>
                 </div>

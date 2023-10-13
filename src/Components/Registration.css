@@ -41,22 +41,19 @@
     height: fit-content;
     background-color: #ffffff;
 }
-.form-box select{
+.form-box select, #country{
     width: 100%;
     border: 1px solid #ccc;
-        border-radius: 5px;
-        background-color: rgb(243, 243, 243);
+        border-radius: 2px;
+        background-color: rgb(249, 248, 248);
 }
 
-.name_title select option:hover {
-    background-color: #e2e2e2;
-}
 .form-box input{
     width:100%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgb(243, 243, 243);
+    border-radius: 2px;
+    background-color: rgb(249, 248, 248);
 }
 
 .form-box label{
