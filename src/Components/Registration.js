@@ -51,7 +51,7 @@ export const Registration = () => {
                                     <div className='name_title  '>
                                         <label htmlFor="country">Saluation</label>
                                         <div id='name-title' className='name-title pr-1  ' >
-                                            <select className='name-title pl-2   border-solid border-gray-100 rounded mr-1 w-32 border-2 h-10' id="title" name="title" >
+                                            <select className='name-title pl-2 border rounded mr-1 h-10' id="title" name="title" >
                                                 <option value="">-Select-</option>
                                                 <option value="Mrs.">Mrs.</option>
                                                 <option value="Miss">Miss.</option>

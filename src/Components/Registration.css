@@ -44,7 +44,8 @@
 }
 
 
-.form-box input{
+.form-box input, 
+.form-box select{
     width:100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -52,7 +53,13 @@
     height: 2.5rem;
     background-color: rgb(243, 243, 243);
 }
-.form-box input:hover{
+
+#name-title option{
+    width: 100%;
+}
+
+.form-box input:hover, 
+.form-box select:hover{
     background-color: white;
 }
 
@@ -63,7 +70,7 @@
 
 #name-title {
     border-style: solid;
-    border-color: black;
+    border-color: #ccc;
 }
 
 #country {
