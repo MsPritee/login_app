@@ -1,0 +1,146 @@
+
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.registration-container {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.registration-form{
+    
+    border-color: #e1e7ed;
+    padding: 1rem;
+}
+
+/* Left sidebar */
+
+.left-sidebar {
+    width: 25%;
+    
+    color: #000000;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+/* Right side form, */
+
+.form-box {
+    width: 75%;
+    height: fit-content;
+    background-color: #ffffff;
+}
+
+
+.form-box input, 
+.form-box select{
+    width:100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    height: 2.5rem;
+    background-color: rgb(243, 243, 243);
+}
+
+#name-title option{
+    width: 100%;
+}
+
+.form-box input:hover, 
+.form-box select:hover{
+    background-color: white;
+}
+
+.Pass-container{
+    width: 100%;
+}
+
+
+#name-title {
+    border-style: solid;
+    border-color: #ccc;
+}
+
+#country {
+    margin-right: 1rem;
+    background: #f9f2f2;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 640px) {
+    .registration-container{
+        width: 90%;
+        margin: 1rem;
+    }
+    .form-box {
+        width: 100%;        
+        height: fit-content;
+        margin-bottom: 8rem;
+    }
+    .left-sidebar {
+        width: 100%;
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    header {
+        justify-items: center;
+        margin-left: 0;
+    }
+
+    .registration-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .left-side-box,
+    .right-side-box {
+        width: 100%;        
+    } 
+    footer{
+        bottom: 0;
+    }
+
+        .registration-form input,
+        .registration-form select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 3px;
+        margin-bottom: 10px;
+    }
+     #name {
+        width: 100%;
+    }
+
+    #company-input,
+    #mobileNumber {
+        width: 100%;
+    }
+    #name-title{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+    #select-country, #country{
+        max-width: 8rem;
+        min-width: 4rem;
+    }
+        .Pass-container {
+            width: 100%;
+        }
+}
+
