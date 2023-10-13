@@ -21,8 +21,7 @@
 /* Left sidebar */
 
 .left-sidebar {
-    width: 25%;
-    
+    width: 25%;    
     color: #000000;
 }
 
@@ -42,22 +41,33 @@
     height: fit-content;
     background-color: #ffffff;
 }
-
-
-.form-box input, 
 .form-box select{
+    width: 100%;
+    border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: rgb(243, 243, 243);
+}
+
+.name_title select option:hover {
+    background-color: #e2e2e2;
+}
+.form-box input{
     width:100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    height: 2.5rem;
     background-color: rgb(243, 243, 243);
 }
 
-#name-title option{
-    width: 100%;
+.form-box label{
+    padding-left: 0.5rem;
 }
 
+.name, #country, 
+.form-box input,
+.form-box select{
+    height: 2.2rem;
+}
 .form-box input:hover, 
 .form-box select:hover{
     background-color: white;
@@ -67,18 +77,12 @@
     width: 100%;
 }
 
-
-#name-title {
+#name-title, #country {
     border-style: solid;
     border-color: #ccc;
 }
-
-#country {
-    margin-right: 1rem;
-    background: #f9f2f2;
-    width: 6rem;
-    height: 2.5rem;
-    border-radius: 5px;
+.name-title select {
+    width: 100%;
 }
 
 @media (max-width: 640px) {
@@ -115,7 +119,12 @@
     footer{
         bottom: 0;
     }
-
+.name,
+#country,
+.form-box input,
+.form-box select {
+    height: 2.3rem;
+}
         .registration-form input,
         .registration-form select {
         width: 100%;
@@ -131,16 +140,23 @@
     #mobileNumber {
         width: 100%;
     }
-    #name-title{
-        max-width: 8rem;
-        min-width: 4rem;
-    }
+ 
+  .name_title .saluation{
+      width: 100%;
+      max-width: none;
+      min-width: none;
+  }
     #select-country, #country{
-        max-width: 8rem;
-        min-width: 4rem;
+        max-width: none;
+        min-width: none;
     }
         .Pass-container {
             width: 100%;
         }
 }
 
+@media (max-width: 450px){
+.name-box, .company-detail, .personal-detail{
+    flex-direction: column;
+}
+}
