@@ -15,7 +15,7 @@ const Login = () => {
 
     })
     const navigate = useNavigate();
-    
+
     const signInBtn = () => {
         const companyEmailInput = document.querySelector('company-email');
         const passwordInput = document.querySelector('password-input');
@@ -73,7 +73,7 @@ const Login = () => {
 
                             <div className='flex flex-col gap-2 my-2 w-full'>
                                 <button className='forgot-btn cursor-pointer font-bold' >Forgot Password</button>
-                                <button className='submit-btn cursor-pointer' type='submit' >Sign In</button>
+                                <button className='submit-btn cursor-pointer' onClick={signInBtn} type='submit' >Sign In</button>
                             </div>
 
                         </form>
