@@ -82,6 +82,31 @@
     width: 100%;
 }
 
+.header{
+    background-color: #056ac8;
+}
+.continue-btn {
+    background-color: #056ac8;
+    transform-style: inherit;
+}
+.continue-btn:hover{
+    background-color: #0784f9;
+}
+.logo-img{
+   
+    display: block;
+}
+
+.left-side-head, .registration{
+        font-size: inherit;
+            line-height: inherit;
+            font-weight: 500;
+}
+.mandatory-mark {
+    color: rgb(182, 12, 12);
+    padding-right: 1px;
+}
+
 @media (max-width: 640px) {
     .registration-container{
         width: 90%;

@@ -5,7 +5,7 @@ import Eye from "./Images/eye1.png"
 import Key from "./Images/key.png"
 import Hide from "./Images/hide.png"
 import './Login.css'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
@@ -14,6 +14,23 @@ const Login = () => {
         setShowPassword(!showPassword);
 
     })
+    const navigate = useNavigate();
+    
+    const signInBtn = () => {
+        const companyEmailInput = document.querySelector('company-email');
+        const passwordInput = document.querySelector('password-input');
+
+        if (
+            companyEmailInput.value.trim() === '' ||
+            passwordInput.value.trim() === '' 
+         
+              
+            ) {
+                window.alert('Please fill in all required fields.');
+            } else {
+                navigate('/next-page');
+            }
+    }
 
     return (
         <>
@@ -26,23 +43,23 @@ const Login = () => {
                     <div>
                         <form>
                             <div className='input-container'>
-                                <label className='mb-2'> Company Email</label>
+                                <label className='mb-2'><span className="mandatory-mark">*</span> Company Email</label>
                                 <div className="email-input-container">
                                     <span className="person  h-5 w-5" >
                                         <img src={Person} />
                                     </span>
-                                    <input className='username-input' type='text' placeholder='Username' />
+                                    <input id='company-email' required className='username-input' type='text' placeholder='Username' />
                                 </div>
 
                             </div>
 
                             <div className='input-container'>
-                                <label className='mb-2'> Password </label>
+                                <label className='mb-2'><span className="mandatory-mark">*</span> Password </label>
                                 <div className='Password-container'>
                                     <span className="key h-5 w-5 ">
                                         <img src={Key} />
                                     </span>
-                                    <input className='password-input' type={showPassword ? "text" : "password"} placeholder='Password' />
+                                    <input id='password-input' required className='password-input' type={showPassword ? "text" : "password"} placeholder='Password' />
                                     <span className="eye h-5 w-5 mr-3" onClick={handleTogglePassword}>
                                         {showPassword ? (
                                             <img src={Hide} alt="Hide Password" />
