@@ -1,5 +1,5 @@
 
-Live link: https://mspritee.github.io/login_app/
+Live link: https://inquisitive-gumption-e224c3.netlify.app/
 
 
 # Getting Started with Create React App
